@@ -28,7 +28,7 @@ cd py-ft4222-spi
 pip install -e .
 ```
 
-2. **Important**: Update FTDI Dll Path"
+2. **Important**: Update FTDI Dll Path
 
 Before import this package, **must** update FTDI DLL path to match your local environment. Key files to modify:
    *  `src/py_ft4222_spi/ft4222_device.py | line 4`: 

@@ -20,10 +20,21 @@ This project relies on **FTDI D2XX Driver** to communicate with FT4222. you **mu
 
 ### 2. Install this library
 
+1. Clone this repo
+
 ```bash
 git clone https://github.com/cqzha/py-ft4222-spi.git
+cd py-ft4222-spi
 pip install -e .
 ```
+
+2. **Important: Update FTDI Dll Path"
+
+Before import this package, **must** update FTDI DLL path to match your local environment. Key files to modify:
+   *  `src/py_ft4222_spi/ft4222_device.py | line 4`: 
+   ```python
+   LibD2XX = cdll.LoadLibrary("your\\local\\path\\ftd2xx.dll") 
+   ``` 
 
 ## Quick Start
 

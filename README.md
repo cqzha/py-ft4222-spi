@@ -21,7 +21,7 @@ This project relies on **FTDI D2XX Driver** to communicate with FT4222. you **mu
 ### 2. Install this library
 
 ```bash
-git clone 
+git clone https://github.com/cqzha/py-ft4222-spi.git
 pip install -e .
 ```
 

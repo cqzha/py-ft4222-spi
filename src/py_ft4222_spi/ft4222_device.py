@@ -1,5 +1,5 @@
 from ctypes import *
-from ft4222_types import *
+from .ft4222_types import *
 from enum import IntEnum
 LibD2XX = cdll.LoadLibrary("C:\\Windows\\System32\\ftd2xx.dll")
 LibFT4222 = cdll.LoadLibrary("./LibFT4222-64.dll")
